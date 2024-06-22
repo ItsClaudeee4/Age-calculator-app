@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet9.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <div class="day">
+                <label id="labelDay">Day</label>
+                <input type="number" name="day" id="day" placeholder="DD">
+                <p id="errorDay" class="hidden">This field is required</p>
+                <p id="not-valid-day" class="hidden">Must be a valid day</p>
+            </div>
+            <div class="Month">
+                <label id="labelMonth">Month</label>
+                <input type="number" name="Month" id="Month" placeholder="MM">
+                <p id="errorMonth" class="hidden">This field is required</p>
+                <p id="not-valid-month" class="hidden">Must be a valid Month</p>
+            </div>
+            <div class="Year">
+                <label id="labelYear">Year</label>
+                <input type="number" name="Year" id="Year" placeholder="YYYY">
+                <p id="errorYear" class="hidden">This field is required</p>
+                <p id="not-valid-year" class="hidden">Must be in the past</p>
+            </div>
+            </form> 
+            <div class="line">
+                <div class="logo">
+                <img onclick="enter()" src="icon-arrow.svg" alt="" class="arrow">
+               </div>
+            </div>
+            <section>
+               <p> <span id="yearValue">- -</span>years</p>
+               <p> <span id="monthValue">- -</span>months</p>
+               <p> <span id="dayValue">- -</span>days</p>
+            </section>
+    </main>
+
+
+    <script src="projet9.js"></script>
+</body>
+</html>
