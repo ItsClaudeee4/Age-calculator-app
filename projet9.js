@@ -18,6 +18,10 @@ let x;
 let y;
 let z;
 
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const currentMonth = currentDate.getMonth();
+const currentDay = currentDate.getDate();
     
 
 function enter() {
@@ -82,9 +86,9 @@ function enter() {
 
 
     if (x === 1 & y === 1 & z === 1 ) {
-         years = 2024 - year.value 
-         months = 12 - month.value 
-         days = 31 - day.value 
+         years = currentYear - year.value 
+         months = currentMonth - month.value 
+         days = currentDay - day.value 
          yearValue.innerHTML = years
          monthValue.innerHTML = months
          dayValue.innerHTML = days
